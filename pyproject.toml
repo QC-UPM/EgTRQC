@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egtrqc"
+version = "0.1.0"
+description = "Reference MVP for delay-aware semiclassical backreaction experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT-like repository license, see LICENSE" }
+authors = [{ name = "Codex for EgTRQC" }]
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+docs = ["sphinx>=7.4"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:dash -p no:dash.testing.plugin"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true

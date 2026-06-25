@@ -1,0 +1,62 @@
+[
+  {
+    "delay_steps": 0,
+    "artifact": "artifacts/reference_sweep/delay_0.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    }
+  },
+  {
+    "delay_steps": 1,
+    "artifact": "artifacts/reference_sweep/delay_1.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    }
+  },
+  {
+    "delay_steps": 2,
+    "artifact": "artifacts/reference_sweep/delay_2.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    }
+  },
+  {
+    "delay_steps": 5,
+    "artifact": "artifacts/reference_sweep/delay_5.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    }
+  }
+]

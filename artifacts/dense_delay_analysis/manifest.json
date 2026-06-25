@@ -1,0 +1,118 @@
+[
+  {
+    "delay_steps": 0,
+    "artifact": "artifacts/dense_delay_analysis/dense_delay_0.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    },
+    "summary": {
+      "delay_steps": 0,
+      "final_trace_distance_to_reference": 0.984375,
+      "max_trace_distance_to_reference": 0.9921567416492243,
+      "final_purity": 0.015625000000000003,
+      "min_purity": 0.015625000000000003,
+      "final_entropy": 4.158883083359672,
+      "max_entropy": 4.158883083359672,
+      "final_source_norm": 22.966304321213745,
+      "max_source_norm": 22.966304321213745,
+      "final_curvature_norm": 46.87000881880351,
+      "max_curvature_norm": 46.87000881880351,
+      "num_records": 11
+    }
+  },
+  {
+    "delay_steps": 1,
+    "artifact": "artifacts/dense_delay_analysis/dense_delay_1.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    },
+    "summary": {
+      "delay_steps": 1,
+      "final_trace_distance_to_reference": 0.9843750000000001,
+      "max_trace_distance_to_reference": 0.9921567416492243,
+      "final_purity": 0.015625000000000003,
+      "min_purity": 0.015625000000000003,
+      "final_entropy": 4.158883083359672,
+      "max_entropy": 4.158883083359672,
+      "final_source_norm": 22.966304321213745,
+      "max_source_norm": 22.966304321213745,
+      "final_curvature_norm": 46.87000881880351,
+      "max_curvature_norm": 46.87000881880351,
+      "num_records": 11
+    }
+  },
+  {
+    "delay_steps": 2,
+    "artifact": "artifacts/dense_delay_analysis/dense_delay_2.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    },
+    "summary": {
+      "delay_steps": 2,
+      "final_trace_distance_to_reference": 0.9843750000000001,
+      "max_trace_distance_to_reference": 0.9921567416492243,
+      "final_purity": 0.015625000000000003,
+      "min_purity": 0.015625000000000003,
+      "final_entropy": 4.1588830833596715,
+      "max_entropy": 4.158883083359672,
+      "final_source_norm": 22.966304321213745,
+      "max_source_norm": 22.966304321213745,
+      "final_curvature_norm": 46.87000881880351,
+      "max_curvature_norm": 46.87000881880351,
+      "num_records": 11
+    }
+  },
+  {
+    "delay_steps": 5,
+    "artifact": "artifacts/dense_delay_analysis/dense_delay_5.json",
+    "delay_audit": {
+      "passed": true,
+      "max_abs_error": 0.0,
+      "message": "Effective source matches the mathematical pure-delay rule."
+    },
+    "single_advance_audit": {
+      "passed": true,
+      "expected_advances": 10,
+      "observed_advances": 10,
+      "message": "Delay history advanced exactly once per physical time step."
+    },
+    "summary": {
+      "delay_steps": 5,
+      "final_trace_distance_to_reference": 0.9843750000000001,
+      "max_trace_distance_to_reference": 0.9921567416492243,
+      "final_purity": 0.015625000000000003,
+      "min_purity": 0.015625000000000003,
+      "final_entropy": 4.1588830833596715,
+      "max_entropy": 4.158883083359672,
+      "final_source_norm": 22.966304321213745,
+      "max_source_norm": 22.966304321213745,
+      "final_curvature_norm": 46.87000881880351,
+      "max_curvature_norm": 46.87000881880351,
+      "num_records": 11
+    }
+  }
+]
