@@ -160,3 +160,5 @@ It includes:
 This PoC is a clean reproducible core.
 It does not depend on notebook-era exploratory materials or legacy binary trace files.
 Future extensions can add richer physics on top of the same delay-buffer and audit contracts without changing the causal semantics.
+
+A zenodo entry has been created, which includes the DOI: `10.5281/zenodo.20933821`
