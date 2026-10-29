@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "AGPL-3.0-only; see LICENSE" }
 authors = [{ name = "Codex for EgTRQC" }]
-dependencies = ["numpy>=2.0", "scipy>=1.13", "pandas>=2.2", "matplotlib>=3.9"]
+dependencies = ["numpy>=2.0", "scipy>=1.13", "pandas>=2.2", "matplotlib>=3.9", "plotly>=5.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
