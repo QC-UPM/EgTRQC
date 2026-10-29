@@ -102,17 +102,20 @@ implementation. New study execution lives outside that kernel.
 | `docs/source/` | English Sphinx guides, UML diagrams, and Google-style API documentation |
 
 Build with `make -C docs html`; open `docs/_build/html/index.html`.
+The published documentation is at <https://qc-upm.github.io/EgTRQC/>.
+The `Documentation` GitHub Actions workflow builds Sphinx on pull requests and
+publishes the generated HTML on pushes to `main` or manual runs. In repository
+**Settings > Pages > Build and deployment**, select **GitHub Actions** as the
+source. The `docs/source/` directory contains Sphinx sources and cannot be served
+directly as the documentation site.
 The UML guide includes package, class, sequence, activity, and artifact diagrams.
 Scientific scope and the relation between historical and controlled protocols are
 explained in [PROTOCOLS.md](PROTOCOLS.md).
 
 ## Citation and Zenodo
 
-The existing repository archive is [10.5281/zenodo.20933821](https://doi.org/10.5281/zenodo.20933821).
-This identifier describes the previously deposited version, not this integration.
-The supplied main paper cites a different archive, `10.5281/zenodo.20934219`;
-the supplementary note cites `10.5281/zenodo.20933821`. These references require
-alignment when the new deposit is created.
+The existing repository archive is [10.5281/zenodo.23780997](https://doi.org/10.5281/zenodo.23780997).
+
 
 **Release maintenance:** after GitHub and Zenodo publication, manually replace the
 release DOI here and in the editable manuscript citation and data/code availability
