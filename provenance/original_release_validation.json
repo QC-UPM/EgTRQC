@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "full_matched_pairs": 732,
+  "full_model_trajectories": 1464,
+  "reduced_model_trajectories": 60,
+  "studies": {
+    "source_controls": 120,
+    "active_short_lag": 120,
+    "register_scaling": 144,
+    "full_robustness": 192,
+    "long_window": 60,
+    "active_refinement": 48,
+    "population_refinement": 48
+  },
+  "numerical_maxima": {
+    "max_trace_error": 1.6919798895287386e-13,
+    "max_kraus_error": 2.220446049250313e-16,
+    "source_index_error_fr": 0.0,
+    "source_index_error_nl": 0.0
+  },
+  "numerical_minima": {
+    "min_eigenvalue_fr": -8.596661736321394e-16,
+    "min_eigenvalue_nl": -6.525371687416381e-16,
+    "min_nojump_eigenvalue": 0.09999999999999987
+  },
+  "note": "Counts include repeated configurations across studies; they are execution counts, not independent statistical samples."
+}

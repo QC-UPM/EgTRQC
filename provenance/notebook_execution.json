@@ -1,0 +1,80 @@
+[
+  {
+    "notebook": "notebooks/00_Start_Here.ipynb",
+    "status": "passed",
+    "seconds": 5.0055219039998065,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/01_Frozen_and_Active_Source_Controls.ipynb",
+    "status": "passed",
+    "seconds": 5.880839942000193,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/02_Short_Lag_and_Time_Resolution.ipynb",
+    "status": "passed",
+    "seconds": 3.501039189000039,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/03_Nested_Register_Scaling.ipynb",
+    "status": "passed",
+    "seconds": 5.495109933000094,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/04_Full_Model_Robustness.ipynb",
+    "status": "passed",
+    "seconds": 5.616232299000103,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/05_Reduced_Topology.ipynb",
+    "status": "passed",
+    "seconds": 2.9211539420002737,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/06_Tables_Figures_and_Verification.ipynb",
+    "status": "passed",
+    "seconds": 13.413492505999784,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay0_Experiment.ipynb",
+    "status": "passed",
+    "seconds": 5.271078045000195,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay0_Visualization.ipynb",
+    "status": "passed",
+    "seconds": 4.44230517799997,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay1_Experiment.ipynb",
+    "status": "passed",
+    "seconds": 5.3686863220000305,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay1_Visualization.ipynb",
+    "status": "passed",
+    "seconds": 4.846521953999854,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay2_5_Experiment.ipynb",
+    "status": "passed",
+    "seconds": 5.446834414000023,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  },
+  {
+    "notebook": "notebooks/reference/delay2_5_Visualization.ipynb",
+    "status": "passed",
+    "seconds": 4.535814467000364,
+    "mode": "cached measured study results plus explicit numerical checks; reference experiments execute smoke profile"
+  }
+]

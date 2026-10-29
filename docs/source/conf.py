@@ -34,3 +34,6 @@ graphviz_output_format = "svg"
 html_theme = "nature"
 html_static_path = ["_static"]
 html_title = "EgTRQC Documentation"
+
+# Dataclass fields are documented once, using Google Attributes as instance variables.
+napoleon_use_ivar = True

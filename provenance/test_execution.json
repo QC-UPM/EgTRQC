@@ -1,0 +1,8 @@
+{
+  "command": "python -m pytest -q tests",
+  "status": "passed",
+  "passed": 41,
+  "failed": 0,
+  "scope": "Inherited model tests and full-register control tests",
+  "note": "Separate from the 732 full matched-pair study executions and 60 reduced trajectories."
+}

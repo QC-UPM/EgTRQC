@@ -43,9 +43,9 @@ Typical Session
 
 .. code-block:: bash
 
-   PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli run-sweep --output-dir artifacts/reference_sweep_vpy
-   PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli analyze-dense-delay --output-dir artifacts/dense_delay_analysis
-   PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m pytest -q
+   python -m egtrqc.cli run-sweep --output-dir results/reference_sweep
+   python -m egtrqc.cli analyze-dense-delay --output-dir results/dense_delay_analysis
+   python -m pytest -q
 
 Generated Artifacts
 -------------------

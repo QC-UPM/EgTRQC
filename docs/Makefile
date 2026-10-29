@@ -1,4 +1,4 @@
-SPHINXBUILD ?= /home/jordieres/soft/vpy/bin/python -m sphinx
+SPHINXBUILD ?= python -m sphinx
 SOURCEDIR = source
 BUILDDIR = _build
 

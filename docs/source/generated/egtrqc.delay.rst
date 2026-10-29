@@ -2,12 +2,6 @@
 ============
 
 .. automodule:: egtrqc.delay
-
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      BufferSnapshot
-      DelayBuffer
-   
+   :members:
+   :undoc-members:
+   :show-inheritance:

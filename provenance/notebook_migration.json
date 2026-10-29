@@ -1,0 +1,105 @@
+{
+  "note": "Notebook code is superseded by package entry points. Original notebook hashes and recorded displays are preserved; the input ZIP remains the source archive.",
+  "notebooks": [
+    {
+      "source": "artifacts/notebooks/delay0/Visualization_delay0.ipynb",
+      "sha256": "7a823bf394ff8861a94684800b54d9a59bf44ddf1bf88dcebdbb6c69f7bb23e0"
+    },
+    {
+      "source": "artifacts/notebooks/delay0/proof_of_concept_delay0.ipynb",
+      "sha256": "529b8df19c29d7665b0f52ea8b46692bee070d42279ab05e374be744495b457c"
+    },
+    {
+      "source": "artifacts/notebooks/delay1/Visualization_delay1.ipynb",
+      "sha256": "0309b3f093b4395a9a783e77bf4f301d7a35c343c86ea55ff4c2b8b92bc42948"
+    },
+    {
+      "source": "artifacts/notebooks/delay1/proof_of_concept_delay1.ipynb",
+      "sha256": "3cade8e58ddf0d03750b353730f262a359280103e93ab1ca23e88480022e0d6c"
+    },
+    {
+      "source": "artifacts/notebooks/delay2-5/Visualization_delay2_5.ipynb",
+      "sha256": "13eb1061a12a28dc6848ad3e04e1483202b7b65cbc6123e7170e4839fe659230"
+    },
+    {
+      "source": "artifacts/notebooks/delay2-5/proof_of_concept_delay2_5.ipynb",
+      "sha256": "2be69d50d83be1b1dac2779cb02a6d8f074abfa34b83c109def92073661c5239"
+    },
+    {
+      "source": "artifacts/notebooks/delay0/Visualization_delay0.ipynb",
+      "sha256": "7a823bf394ff8861a94684800b54d9a59bf44ddf1bf88dcebdbb6c69f7bb23e0"
+    },
+    {
+      "source": "artifacts/notebooks/delay0/proof_of_concept_delay0.ipynb",
+      "sha256": "529b8df19c29d7665b0f52ea8b46692bee070d42279ab05e374be744495b457c"
+    },
+    {
+      "source": "artifacts/notebooks/delay1/Visualization_delay1.ipynb",
+      "sha256": "0309b3f093b4395a9a783e77bf4f301d7a35c343c86ea55ff4c2b8b92bc42948"
+    },
+    {
+      "source": "artifacts/notebooks/delay1/proof_of_concept_delay1.ipynb",
+      "sha256": "3cade8e58ddf0d03750b353730f262a359280103e93ab1ca23e88480022e0d6c"
+    },
+    {
+      "source": "artifacts/notebooks/delay2-5/Visualization_delay2_5.ipynb",
+      "sha256": "13eb1061a12a28dc6848ad3e04e1483202b7b65cbc6123e7170e4839fe659230"
+    },
+    {
+      "source": "artifacts/notebooks/delay2-5/proof_of_concept_delay2_5.ipynb",
+      "sha256": "2be69d50d83be1b1dac2779cb02a6d8f074abfa34b83c109def92073661c5239"
+    },
+    {
+      "source": "notebooks/00_Start_Here.ipynb",
+      "sha256": "506b95fc62fb5aa805c31bf278c36692b53b4240e0bc55ffc49ea1666b9c4184"
+    },
+    {
+      "source": "notebooks/01_Frozen_and_Active_Source_Controls.ipynb",
+      "sha256": "f5e4dc302068f09841058e609c84561c9eee53751a09dfa0cb6993ca141ce9e4"
+    },
+    {
+      "source": "notebooks/02_Short_Lag_and_Time_Resolution.ipynb",
+      "sha256": "364d7dec101483de864e85878b6bad57b7bbfb77c08255745c86a25f89fd0cdc"
+    },
+    {
+      "source": "notebooks/03_Nested_Register_Scaling.ipynb",
+      "sha256": "f35a0acd6bf2924b14d3d7e25a30f832e25b185cd39d16de5de7aa6457aacaa7"
+    },
+    {
+      "source": "notebooks/04_Full_Model_Robustness.ipynb",
+      "sha256": "f1a70aba1916405264953bc3f30f6767dbb93377a7be7185e66e56c20a64fa86"
+    },
+    {
+      "source": "notebooks/05_Reduced_Topology.ipynb",
+      "sha256": "5933db60bdea689d3fb50d68039f3c8cb9f0c4dc40cd3c0bcc1b5cc1bf472d63"
+    },
+    {
+      "source": "notebooks/06_Tables_Figures_and_Verification.ipynb",
+      "sha256": "42278d0a144fbfab4f0858748a2ab2c079b89026038e6ad30c229a9755d18386"
+    },
+    {
+      "source": "notebooks/reference/delay0_Experiment.ipynb",
+      "sha256": "38c48d13b33c7c8fc8247071814d36918af8778111ecd6f4a53e08f25f2f3a1a"
+    },
+    {
+      "source": "notebooks/reference/delay0_Visualization.ipynb",
+      "sha256": "1a38d7644eac60d7408c3aa0851fb28cbb99ea83645e0eb17ef755cf4a92b919"
+    },
+    {
+      "source": "notebooks/reference/delay1_Experiment.ipynb",
+      "sha256": "799744fb4e698761c76a912a0c34ff879616dd65c4aeea684eac7008c399c7dd"
+    },
+    {
+      "source": "notebooks/reference/delay1_Visualization.ipynb",
+      "sha256": "df729568b2f5ebf93ba7dbd5f99d7c8ba56360614d5842c9ab22b4c3e804d496"
+    },
+    {
+      "source": "notebooks/reference/delay2_5_Experiment.ipynb",
+      "sha256": "175fa8e78cd48328d91b33741e190adc4148f7ab678e5e1b77c620c4ec3ab99e"
+    },
+    {
+      "source": "notebooks/reference/delay2_5_Visualization.ipynb",
+      "sha256": "4e4556979b21bb70abe476ce1f785d20850696f11fa8cd7a2565bc2827dc123f"
+    }
+  ]
+}

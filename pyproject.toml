@@ -8,9 +8,9 @@ version = "0.1.0"
 description = "Reference MVP for delay-aware semiclassical backreaction experiments."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT-like repository license, see LICENSE" }
+license = { text = "AGPL-3.0-only; see LICENSE" }
 authors = [{ name = "Codex for EgTRQC" }]
-dependencies = ["numpy>=1.26"]
+dependencies = ["numpy>=2.0", "scipy>=1.13", "pandas>=2.2", "matplotlib>=3.9"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]

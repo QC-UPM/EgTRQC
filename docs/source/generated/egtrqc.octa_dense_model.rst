@@ -2,12 +2,6 @@
 =========================
 
 .. automodule:: egtrqc.octa_dense_model
-
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      DenseReducedOCTAModel
-      DenseReducedOCTAModelConfig
-   
+   :members:
+   :undoc-members:
+   :show-inheritance:

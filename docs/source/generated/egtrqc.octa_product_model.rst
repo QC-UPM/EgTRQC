@@ -2,12 +2,6 @@
 ===========================
 
 .. automodule:: egtrqc.octa_product_model
-
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      ProductStateOCTAModel
-      ProductStateOCTAModelConfig
-   
+   :members:
+   :undoc-members:
+   :show-inheritance:

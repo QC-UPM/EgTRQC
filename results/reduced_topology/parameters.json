@@ -1,0 +1,71 @@
+{
+  "graph": {
+    "damping": 0.2,
+    "feedback_gain": 0.35,
+    "source_gain": 0.8,
+    "edge_curvature_strength": 0.15,
+    "source_bias": 0.1,
+    "noise_scale": 0.0,
+    "alpha_area": 1.0,
+    "mass_m": 0.7,
+    "mesh_h": 1.0,
+    "ball_radius_hops": 1,
+    "enforce_zero_mean_if_massless": true,
+    "geometry_register": {
+      "levels_per_node": 3,
+      "delta_scale": 0.15,
+      "max_configs": 16,
+      "seed_geometry_ensemble": 7,
+      "enforce_total_curvature": true,
+      "beta_geom": 8.0,
+      "gamma_geom_base": 40.0
+    }
+  },
+  "product": {
+    "damping": 0.15,
+    "feedback_gain": 0.25,
+    "source_bias": 0.0,
+    "alpha_area": 1.0,
+    "mass_m": 0.7,
+    "mesh_h": 1.0,
+    "ball_radius_hops": 1,
+    "eps_modular": 0.002,
+    "reference_excitation": 0.1,
+    "initial_excitation": 0.35,
+    "enforce_zero_mean_if_massless": true,
+    "geometry_register": {
+      "levels_per_node": 3,
+      "delta_scale": 0.15,
+      "max_configs": 16,
+      "seed_geometry_ensemble": 7,
+      "enforce_total_curvature": true,
+      "beta_geom": 8.0,
+      "gamma_geom_base": 40.0
+    },
+    "noise_scale": 0.0
+  },
+  "dense": {
+    "alpha_area": 1.0,
+    "mass_m": 0.7,
+    "mesh_h": 1.0,
+    "ball_radius_hops": 1,
+    "eps_modular": 0.002,
+    "reference_state": "zeros",
+    "initial_state": "plus_product",
+    "omega_0": 251.32741228718345,
+    "alpha_curv_freq": 0.2,
+    "gamma0": 0.3,
+    "gamma_curv": 1.2,
+    "transverse_hx": 0.0,
+    "enforce_zero_mean_if_massless": true,
+    "geometry_register": {
+      "levels_per_node": 3,
+      "delta_scale": 0.15,
+      "max_configs": 16,
+      "seed_geometry_ensemble": 7,
+      "enforce_total_curvature": true,
+      "beta_geom": 8.0,
+      "gamma_geom_base": 40.0
+    }
+  }
+}

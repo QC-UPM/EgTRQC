@@ -2,13 +2,6 @@
 ================
 
 .. automodule:: egtrqc.simulator
-
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      DelayAwareSimulator
-      SimulationResult
-      StepRecord
-   
+   :members:
+   :undoc-members:
+   :show-inheritance:

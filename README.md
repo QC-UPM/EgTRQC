@@ -1,164 +1,123 @@
-# EgTRQC
+# EgTRQC: finite-register delayed-feedback benchmark
 
-EgTRQC is a clean, reproducible PoC for delay-aware semiclassical backreaction experiments with OCTA-inspired reduced models.
+EgTRQC compares an explicit finite matter–geometry register with a matter-only
+nonlinear GKSL-type closure on a six-qubit octahedral graph. It also provides
+linear, graph, product-state, and dense reduced models. Feedback history is an
+explicit object, observed without mutation and advanced once per physical step.
 
-The project is designed around three non-negotiable goals:
+## Installation and verification
 
-- mathematically exact delay semantics,
-- reproducible and inspectable simulation artifacts,
-- modular model families that can grow in physical fidelity without changing the causal contract.
-
-## Why This PoC Exists
-
-The repository provides a compact but serious reference implementation for experiments where delayed feedback matters physically and numerically.
-Instead of mixing model evolution, diagnostics, and figure generation in one opaque flow, EgTRQC separates:
-
-- instantaneous source evaluation,
-- delayed effective-source evaluation,
-- physical state advancement,
-- diagnostics and artifact generation.
-
-That separation keeps `delay_steps` meaningful, makes the implementation auditable, and provides a clean base for future extensions.
-
-## Core Capabilities
-
-EgTRQC currently offers:
-
-- strict typing with Google-style docstrings,
-- a delay buffer with exact `J(t_0)` prehistory semantics,
-- executable audits for the pure-delay rule and single-advance-per-step updates,
-- deterministic sweep execution with JSON manifests,
-- OCTA-inspired model families spanning linear, graph, product-state, and dense-state regimes,
-- Plotly HTML artifacts, CSV tables, and Markdown reports for analysis runs,
-- automated tests and Sphinx-generated documentation.
-
-## PoC Map
-
-```mermaid
-flowchart TD
-    A[SimulationConfig] --> B[Model Family]
-    A --> C[DelayBuffer]
-    B --> D[Instantaneous Source J(t_n)]
-    C --> E[Effective Source J_eff(t_n)]
-    D --> C
-    E --> F[Curvature Proxy / Response]
-    F --> G[Physical State Advance]
-    G --> H[Step Records]
-    H --> I[Audits]
-    H --> J[JSON / CSV / Plotly / Markdown Artifacts]
-    G --> C
-```
-
-The key invariant is that the physical history is observed many times but advanced only once per physical time step.
-
-## Model Families
-
-The PoC exposes several levels of modeling detail:
-
-```mermaid
-flowchart LR
-    A[LinearBackreactionModel] --> B[Fast causal reference]
-    C[GraphBackreactionModel] --> D[Node-wise OCTA-inspired response]
-    E[ProductStateOCTAModel] --> F[Factorized quantum approximation]
-    G[DenseReducedOCTAModel] --> H[Small-system dense-state study]
-```
-
-These models share the same delay-aware simulator contract, so we can compare complexity levels without rewriting the causal machinery.
-
-## Reproducibility Pipeline
-
-```mermaid
-flowchart TD
-    A[CLI Command] --> B[Simulation Run]
-    B --> C[Per-step Records]
-    C --> D[Delay Audit]
-    C --> E[Single-Advance Audit]
-    C --> F[Serialized Result JSON]
-    C --> G[Analysis Tables]
-    G --> H[Plotly HTML]
-    G --> I[Markdown Report]
-    D --> J[Manifest]
-    E --> J
-    F --> J
-```
-
-## Quick Start
-
-Run the core reproducibility sweep:
+Use Python 3.11 or later:
 
 ```bash
-PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli run-sweep --output-dir artifacts/reference_sweep_vpy
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev,docs]'
+python -m pytest -q
+python -m egtrqc.reproduce --study validate
+python scripts/verify_files.py
+python -m sphinx -W --keep-going -b html docs/source docs/_build/html
 ```
 
-Run the dense delay analysis:
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`.
+`requirements-lock.txt` records the supplied numerical environment, with notebook
+runtime dependencies removed; it is not a lock for every supported platform.
+
+## Reproduce the studies
 
 ```bash
-PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli analyze-dense-delay --output-dir artifacts/dense_delay_analysis
+# Rebuild reports from the supplied trajectories.
+python -m egtrqc.reproduce --study report
+# Run or reuse every configured study and rebuild reports.
+python -m egtrqc.reproduce --study all
+# Recompute all trajectories (potentially expensive).
+python -m egtrqc.reproduce --study all --recompute
+# Select one study.
+python -m egtrqc.reproduce --study active_refinement
 ```
 
-Run the automated verification suite:
+The seven full-model studies cover frozen and active sources, short lags, nested
+registers, robustness, long horizons, time refinement, and population refinement.
+The supplied data contain 732 matched pairs (1,464 full-model trajectories) and
+60 reduced topology trajectories. Repeated configurations across studies are
+execution counts, not independent statistical samples. Folds are deterministic;
+summaries use the mean and sample standard deviation over three folds.
+Coherent geometry retains quadratic register blocks; the M=10,20,40 scaling
+study uses pointer-classical geometry. See [protocols](PROTOCOLS.md) and the
+[data dictionary](DATA_DICTIONARY.md) before comparing outputs.
+
+The inherited reduced-model commands remain available:
 
 ```bash
-PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m pytest -q
-```
-
-Build the Sphinx documentation:
-
-```bash
-make -C docs html
-```
-
-Rebuild the full PoC in one command:
-
-```bash
+python -m egtrqc.cli run-sweep --output-dir results/reference_sweep
+python -m egtrqc.cli analyze-dense-delay --output-dir results/dense_delay_analysis
 bash scripts/build_all.sh
 ```
 
-## Command Surface
+The build script runs tests, reuses cached studies, validates outputs, and builds
+Sphinx documentation. Pass `--recompute` to regenerate the integrated studies.
 
-The current CLI is intentionally narrow:
+## Architecture and notebook migration
 
-- `run-sweep`: execute the deterministic delay sweep for the reference linear model.
-- `analyze-dense-delay`: run the dense reduced OCTA-inspired sweep and generate tables, plots, and a report.
+The package follows MVC responsibilities: physical models and configuration form
+the model layer; the simulator, study controller, and CLIs coordinate execution;
+reporting and analysis render stored outputs. Controllers may persist results,
+but views do not schedule new physical trajectories.
 
-That narrow surface is deliberate. The PoC favors a small number of well-audited entry points over a large unstable script zoo.
+```mermaid
+classDiagram
+    class StudyConfig
+    class FullRegister
+    class DelayBuffer
+    class StudyController
+    class StudyReporting
+    class ReproduceCLI
+    ReproduceCLI ..> StudyController : dispatches
+    ReproduceCLI ..> StudyReporting : requests reports
+    StudyController ..> StudyConfig : reads manifest
+    StudyController ..> FullRegister : runs matched pairs
+    StudyController ..> DelayBuffer : schedules sources
+    StudyReporting ..> StudyConfig : validates metadata
+```
 
-## Repository Layout
+Executable notebooks are removed. Their numerical definitions are available in
+Python modules, their recorded MIME displays and PDF figures are preserved under
+`results/legacy_reference/`, and their hashes are recorded in
+`provenance/notebook_migration.json`. The original ZIP is the source archive.
+`notebook_kernel.py` keeps its historical name and inherited class definitions
+for compatibility and numerical equivalence; its legacy plotting and suite
+helpers are documented as a compatibility boundary, not a fully separated MVC
+implementation. New study execution lives outside that kernel.
 
-- `src/egtrqc/`: typed package code.
-- `tests/`: automated verification for delay semantics, simulator behavior, ensembles, and OCTA-inspired models.
-- `artifacts/`: generated JSON, CSV, Plotly HTML, and Markdown analysis reports.
-- `docs/`: Sphinx documentation sources and generated site output.
+## Repository layout
 
-## Architectural Principles
+| Directory | Contents |
+| --- | --- |
+| `src/egtrqc/` | Physical models, source controllers, CLIs, diagnostics, reporting |
+| `configs/` | Deterministic full-model study manifests |
+| `results/` | Imported trajectories, summaries, tables, figures, historical displays |
+| `artifacts/` | Earlier package-generated reduced-model reference outputs |
+| `provenance/` | Input hashes, original release evidence, integration integrity manifest |
+| `tests/` | Delay, numerical equivalence, model, and integration checks |
+| `docs/source/` | English Sphinx guides, UML diagrams, and Google-style API documentation |
 
-EgTRQC follows a few simple rules:
+Build with `make -C docs html`; open `docs/_build/html/index.html`.
+The UML guide includes package, class, sequence, activity, and artifact diagrams.
+Scientific scope and the relation between historical and controlled protocols are
+explained in [PROTOCOLS.md](PROTOCOLS.md).
 
-1. The delay line is a first-class object, not hidden state.
-2. Observation and mutation are separate operations.
-3. Diagnostics consume records; they do not alter physics.
-4. Models can vary, but the simulator contract should stay stable.
-5. Every analysis should emit machine-readable artifacts and human-readable interpretation.
+## Citation and Zenodo
 
-## Documentation
+The existing repository archive is [10.5281/zenodo.20933821](https://doi.org/10.5281/zenodo.20933821).
+This identifier describes the previously deposited version, not this integration.
+The supplied main paper cites a different archive, `10.5281/zenodo.20934219`;
+the supplementary note cites `10.5281/zenodo.20933821`. These references require
+alignment when the new deposit is created.
 
-The full documentation lives in `docs/` and is generated with Sphinx.
-It includes:
+**Release maintenance:** after GitHub and Zenodo publication, manually replace the
+release DOI here and in the editable manuscript citation and data/code availability
+statement. The supplied PDFs are reference documents; no editable manuscript
+source was included and no new DOI or remote deposit is claimed.
 
-- conceptual overviews,
-- architecture diagrams,
-- theory and equations pages,
-- workflow documentation,
-- tutorial-style example paths,
-- model-family descriptions,
-- developer extension guidance,
-- CLI guidance,
-- API reference pages generated from the codebase.
-
-## Scope
-
-This PoC is a clean reproducible core.
-It does not depend on notebook-era exploratory materials or legacy binary trace files.
-Future extensions can add richer physics on top of the same delay-buffer and audit contracts without changing the causal semantics.
-
-A zenodo entry has been created `https://zenodo.org/records/20933821`, which includes the DOI: `10.5281/zenodo.20933821`.
+The original GNU Affero General Public License, version 3, is retained in
+[LICENSE](LICENSE). Original scientific authorship and citations are preserved.

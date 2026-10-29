@@ -83,3 +83,11 @@ The safest way to extend the PoC is:
 - keep observation and mutation separate,
 - add model fidelity by implementing the same model interface,
 - keep artifact generation outside the physical evolution loop.
+
+MVC Responsibilities
+--------------------
+
+The model layer contains physical configuration and state evolution. Controllers
+own sequencing, caching, and persistence. Views consume results to render figures,
+tables, and reports. See :doc:`uml` for class relationships and interaction order,
+and :doc:`integrated_release` for the archived kernel compatibility boundary.

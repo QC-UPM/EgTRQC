@@ -2,14 +2,6 @@
 =============
 
 .. automodule:: egtrqc.config
-
-   
-   .. rubric:: Classes
-
-   .. autosummary::
-   
-      DelayConfig
-      KernelConfig
-      ReproducibilityConfig
-      SimulationConfig
-   
+   :members:
+   :undoc-members:
+   :show-inheritance:

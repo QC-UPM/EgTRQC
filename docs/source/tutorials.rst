@@ -32,7 +32,7 @@ Command
 
 .. code-block:: bash
 
-   PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli run-sweep        --output-dir artifacts/reference_sweep_vpy        --delays 0 1 2 5        --total-time 0.5        --dt 0.05        --seed 7
+   python -m egtrqc.cli run-sweep        --output-dir results/reference_sweep        --delays 0 1 2 5        --total-time 0.5        --dt 0.05        --seed 7
 
 What it generates
 ^^^^^^^^^^^^^^^^^
@@ -69,7 +69,7 @@ Command
 
 .. code-block:: bash
 
-   PYTHONPATH=src /home/jordieres/soft/vpy/bin/python -m egtrqc.cli analyze-dense-delay        --output-dir artifacts/dense_delay_analysis        --delays 0 1 2 5        --total-time 0.5        --dt 0.05        --seed 7
+   python -m egtrqc.cli analyze-dense-delay        --output-dir results/dense_delay_analysis        --delays 0 1 2 5        --total-time 0.5        --dt 0.05        --seed 7
 
 What it generates
 ^^^^^^^^^^^^^^^^^

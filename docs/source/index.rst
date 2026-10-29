@@ -10,6 +10,8 @@ The documentation is organized from concepts to workflows to API details.
 
    overview
    architecture
+   uml
+   integrated_release
    theory
    models
    workflows

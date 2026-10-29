@@ -1,0 +1,174 @@
+[
+  {
+    "fold": 0,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0,
+    "max_state_distance_fr_during_hold": 0.0,
+    "max_state_distance_nl_during_hold": 0.0,
+    "max_state_distance_fr_after_hold": 0.0001111060715501078,
+    "max_state_distance_nl_after_hold": 0.0002479514375132651
+  },
+  {
+    "fold": 0,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 0,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 1,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "fixed_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "fixed_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "instantaneous_projector_signed",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": false,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  },
+  {
+    "fold": 2,
+    "mode": "instantaneous_projector_unsigned",
+    "geometry_quantum": true,
+    "maximum_trace_distance_curve_difference_during_hold": 0.0,
+    "maximum_applied_source_difference_during_hold": 0.0
+  }
+]

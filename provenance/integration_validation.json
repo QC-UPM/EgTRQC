@@ -1,0 +1,19 @@
+{
+  "source_archive": "EgTRQC_Integrated_Release.zip",
+  "source_archive_sha256": "6905c480989bb8dce1a567fa935e70a45f46ca6bdbadf03311e9f27e46d694c7",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "2.4.6",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "architecture": "Existing physical model classes preserved; manifest execution separated from report views. Extracted kernel retained as a scientific compatibility boundary.",
+  "verification": {
+    "tests": "43 passed",
+    "command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 MPLBACKEND=Agg python -m pytest -q",
+    "full_matched_pairs_validated": 732,
+    "reduced_trajectories_validated": 60,
+    "reports": "Regenerated from supplied trajectories; full numerical sweep not recomputed.",
+    "sphinx": "Full HTML build with -E -W --keep-going passed without warnings.",
+    "uml_diagrams": 6
+  },
+  "citation": "Release maintainer will update DOI and editable manuscript after publication; PDF sources were not included.",
+  "historical_evidence": "input_archive.json, input_files.sha256.json, environment.json, notebook_execution.json, test_execution.json, kernel_equivalence.json, release_files.sha256.json and original_release_validation.json describe the supplied release, not this integration."
+}

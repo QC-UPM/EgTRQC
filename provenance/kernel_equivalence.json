@@ -1,0 +1,42 @@
+[
+  {
+    "geometry_quantum": false,
+    "mode": "fixed_projector_signed",
+    "max_joint_entry_error": 6.377468505484849e-18
+  },
+  {
+    "geometry_quantum": false,
+    "mode": "fixed_projector_unsigned",
+    "max_joint_entry_error": 3.491637074061101e-18
+  },
+  {
+    "geometry_quantum": false,
+    "mode": "instantaneous_projector_signed",
+    "max_joint_entry_error": 7.806443869170165e-18
+  },
+  {
+    "geometry_quantum": false,
+    "mode": "instantaneous_projector_unsigned",
+    "max_joint_entry_error": 4.3853263937194714e-18
+  },
+  {
+    "geometry_quantum": true,
+    "mode": "fixed_projector_signed",
+    "max_joint_entry_error": 9.148507953680036e-18
+  },
+  {
+    "geometry_quantum": true,
+    "mode": "fixed_projector_unsigned",
+    "max_joint_entry_error": 7.05981306231723e-18
+  },
+  {
+    "geometry_quantum": true,
+    "mode": "instantaneous_projector_signed",
+    "max_joint_entry_error": 1.2152520048570271e-17
+  },
+  {
+    "geometry_quantum": true,
+    "mode": "instantaneous_projector_unsigned",
+    "max_joint_entry_error": 7.337413799674976e-18
+  }
+]
